@@ -51,7 +51,7 @@ kubectl apply \
 # Crossplane #
 ##############
 
-helm upgrade --install crossplane crossplane \
+helm upgrade --install crossplane crossplane --version 1.20.1 \
     --repo https://charts.crossplane.io/stable \
     --namespace crossplane-system --create-namespace --wait
 
